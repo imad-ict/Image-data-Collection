@@ -67,8 +67,8 @@ while RUN:
 
             elif event.type == pygame.KEYDOWN and keys[pygame.K_s]:
                 roi = im[x0:x1, y0:y1]
-                imsave(os.path.join(save_dir, '{}.jpg'.format(i)), roi)
-                print('Saved image: {}.jpg'.format(i))
+                imsave(os.path.join(save_dir, f'{i}.jpg'), roi)
+                print(f'Saved image: {i}.jpg')
                 i += 1
 
             elif event.type == pygame.KEYDOWN and keys[pygame.K_q]:
